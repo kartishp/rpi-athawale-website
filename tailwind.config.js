@@ -31,9 +31,14 @@ module.exports = {
         montserrat: ["Montserrat"],
       },
       backgroundImage: {
+        "home-membership-card": "url('/home-membership-card.png')",
+        "home-rpi-contribution-card": "url('/home-rpi-contribution-card.png')",
+        "home-about-rpi-background": "url('/home-about-rpi-background.png')",
+        "home-executive-member-banner":
+          "url('/home-excutive-member-banner.png')",
         "chakraveer-footer": "url('/chakraveer-footer.png')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

@@ -9,14 +9,12 @@ interface PageLayoutInterface {
 
 const PageLayout = ({ children }: PageLayoutInterface) => {
   return (
-    <div className="w-full min-h-screen h-full font-montserrat">
+    <div className="w-full min-h-screen h-full font-montserrat relative">
       <Head>
         <title>RPI Athawale</title>
       </Head>
       <Header />
-      <main className="w-full min-h-screen h-full md:-mt-32 md:mb-32">
-        {children}
-      </main>
+      <main className="w-full min-h-screen h-full">{children}</main>
       <Footer />
     </div>
   );
